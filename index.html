@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background: var(--card-bg);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+    p.subtitle {
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    p.bio {
+      color: var(--text-muted);
+      margin-bottom: 30px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .link-btn {
+      display: block;
+      padding: 12px 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+      text-decoration: none;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    .link-btn:hover {
+      background-color: var(--accent);
+      color: var(--bg);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Your Name</h1>
+    <p class="subtitle">Developer & Creator</p>
+    <p class="bio">Welcome to my site! I build cool stuff on the web and share open-source projects here on GitHub.</p>
+    <div class="links">
+      <a href="https://github.com/your-username" class="link-btn" target="_blank">GitHub Profile</a>
+      <a href="https://linkedin.com/in/your-username" class="link-btn" target="_blank">LinkedIn</a>
+      <a href="mailto:your.email@example.com" class="link-btn">Contact Me</a>
+    </div>
+  </div>
+</body>
+</html>
